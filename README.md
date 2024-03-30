@@ -57,20 +57,23 @@ Developed by:Pavithra D
 RegisterNumber:212223230146
 
 **Half Adder**
+```
 module half_adder(a,b,sum,carry);
 input a,b;
 output sum,carry; 
 assign sum = a^b;
 assign carry = a & b;
 endmodule
+```
 **Half Subtractor**
+```
 module halfsub_top(a,b,D,Bo);
 input a,b;
 output D,Bo; 
 assign D = a ^ b;
 assign Bo = ~a & b;
 endmodule
-
+```
 **Output RTL Schematic**
 ![image](https://github.com/PavithraD23004871/HALF_ADDER_SUBTRACTOR/assets/138955967/0e84388c-3b43-4eb0-b831-d640b71b68ea)
 **Half_adder**
